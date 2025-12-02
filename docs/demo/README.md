@@ -6,3 +6,5 @@ permalink: /demo/
 
 - [bar](./bar.md)
 - [foo](./foo.md)
+- [Linux 学习笔记](./linux/)
+- [Kubernetes 学习笔记](./kubernetes/)
