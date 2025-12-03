@@ -13,6 +13,7 @@
 import { defineThemeConfig } from 'vuepress-theme-plume'
 import { enCollections, zhCollections } from './collections'
 import { enNavbar, zhNavbar } from './navbar'
+import { enSidebar, zhSidebar } from './sidebar'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -40,10 +41,10 @@ export default defineThemeConfig({
   // createTime: true, // 是否显示文章创建时间
 
   /* 站点页脚 */
-  // footer: {
-  //   message: 'Power by <a target="_blank" href="https://v2.vuepress.vuejs.org/">VuePress</a> & <a target="_blank" href="https://theme-plume.vuejs.press">vuepress-theme-plume</a>',
-  //   copyright: '',
-  // },
+  footer: {
+    message: '',
+    copyright: 'Copyright © 2025 blwsyed',
+  },
 
   /* 过渡动画 @see https://theme-plume.vuejs.press/config/basic/#transition */
   // transition: {
@@ -67,6 +68,7 @@ export default defineThemeConfig({
       },
 
       navbar: zhNavbar,
+      sidebar: zhSidebar,
       collections: zhCollections,
 
       /**
@@ -94,6 +96,7 @@ export default defineThemeConfig({
       },
 
       navbar: enNavbar,
+      sidebar: enSidebar,
       collections: enCollections,
 
       /**

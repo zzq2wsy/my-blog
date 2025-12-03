@@ -7,16 +7,16 @@ config:
     full: true
     effect: lightning
     hero:
-      name: Theme Plume
-      tagline: VuePress Next Theme
-      text: 一个简约的，功能丰富的 vuepress 文档&博客 主题
+      name: Welcome to my personal website
+      tagline: A place for learning and sharing
+      text: This is my personal blog where I share my learning notes and experiences
       actions:
         -
           theme: brand
-          text: 博客
+          text: Blog
           link: /blog/
         -
           theme: alt
-          text: Github →
-          link: https://github.com/pengzhanbo/vuepress-theme-plume
+          text: Notes
+          link: /demo/
 ---

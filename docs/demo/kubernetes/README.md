@@ -15,8 +15,8 @@ Kubernetes（简称 K8s）是一个开源的容器编排平台，用于自动化
 
 ## 学习资源
 
-- [Kubernetes 官方文档](https://kubernetes.io/docs/)
-- [kubectl 命令参考](https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands)
+- [Kubernetes 官方文档](https://kubernetes.io/zh-cn/docs/home/)
+- [kubectl 命令参考](https://kubernetes.io/zh-cn/docs/reference/kubectl/)
 
 ---
 
