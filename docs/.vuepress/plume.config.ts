@@ -11,9 +11,9 @@
  */
 
 import { defineThemeConfig } from 'vuepress-theme-plume'
-import { enCollections, zhCollections } from './collections'
-import { enNavbar, zhNavbar } from './navbar'
-import { enSidebar, zhSidebar } from './sidebar'
+import { zhCollections } from './collections'
+import { zhNavbar } from './navbar'
+import { zhSidebar } from './sidebar'
 
 /**
  * @see https://theme-plume.vuejs.press/config/basic/
@@ -70,34 +70,6 @@ export default defineThemeConfig({
       navbar: zhNavbar,
       sidebar: zhSidebar,
       collections: zhCollections,
-
-      /**
-       * 公告板
-       * @see https://theme-plume.vuejs.press/guide/features/bulletin/
-       */
-       // bulletin: {
-       //   layout: 'top-right',
-       //   contentType: 'markdown',
-       //   title: '',
-       //   content: '',
-       // },
-    },
-    '/en/': {
-      /**
-       * @see https://theme-plume.vuejs.press/config/basic/#profile
-       */
-      profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'blwsyed-blog',
-        description: 'This is my blog',
-        // circle: true,
-        // location: '',
-        // organization: '',
-      },
-
-      navbar: enNavbar,
-      sidebar: enSidebar,
-      collections: enCollections,
 
       /**
        * 公告板

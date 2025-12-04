@@ -15,23 +15,8 @@ export const zhNavbar = defineNavbarConfig([
     text: '笔记',
     items: [
       { text: 'Demo', link: '/demo/' },
-      { text: 'Linux', link: '/linux/' },
-      { text: 'Kubernetes', link: '/kubernetes/' },
-    ],
-  },
-])
-
-export const enNavbar = defineNavbarConfig([
-  { text: 'Home', link: '/en/' },
-  { text: 'Blog', link: '/en/blog/' },
-  { text: 'Tags', link: '/en/blog/tags/' },
-  { text: 'Archives', link: '/en/blog/archives/' },
-  {
-    text: 'Notes',
-    items: [
-      { text: 'Demo', link: '/en/demo/' },
-      { text: 'Linux', link: '/en/linux/' },
-      { text: 'Kubernetes', link: '/en/kubernetes/' },
+      { text: 'Linux', link: '/notes/linux/' },
+      { text: 'Kubernetes', link: '/notes/kubernetes/' },
     ],
   },
 ])
