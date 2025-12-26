@@ -1,7 +1,7 @@
 ---
 title: Kubespray 部署
 createTime: 2025/01/01 10:00:00
-permalink: /demo/kubernetes/deploy/kubespray/
+permalink: /notes/kubernetes/deploy/kubespray/
 ---
 
 # Kubespray 部署
