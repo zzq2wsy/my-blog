@@ -4,9 +4,9 @@
  * Navbar 配置文件，它在 `.vuepress/plume.config.ts` 中被导入。
  */
 
-import { defineNavbarConfig } from 'vuepress-theme-plume'
+import { defineNavbarConfig, type ThemeNavItem } from 'vuepress-theme-plume'
 
-export const zhNavbar = defineNavbarConfig([
+export const zhNavbar: ThemeNavItem[] = defineNavbarConfig([
   { text: '首页', link: '/' },
   { text: '博客', link: '/blog/' },
   { text: '标签', link: '/blog/tags/' },

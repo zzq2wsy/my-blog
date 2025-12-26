@@ -24,7 +24,7 @@
  *
  * 通过 `defineCollection` 定义的 collection 配置，应该填入 `defineCollections` 中
  */
-import { defineCollection, defineCollections } from 'vuepress-theme-plume'
+import { defineCollection, defineCollections, type ThemeCollections } from 'vuepress-theme-plume'
 
 /* =================== locale: zh-CN ======================= */
 
@@ -80,7 +80,7 @@ const zhKubernetesDoc = defineCollection({
  * 导出所有的 collections
  *  (zhBlog 为博客示例，如果不需要博客功能，请删除)
  */
-export const zhCollections = defineCollections([
+export const zhCollections: ThemeCollections = defineCollections([
   zhBlog,
   zhLinuxDoc,
   zhKubernetesDoc,

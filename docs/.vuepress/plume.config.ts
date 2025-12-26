@@ -10,7 +10,7 @@
  * 特别的，请不要在两个配置文件中重复配置相同的项，当前文件的配置项会覆盖 `.vuepress/config.ts` 文件中的配置
  */
 
-import { defineThemeConfig } from 'vuepress-theme-plume'
+import { defineThemeConfig, type ThemeConfig } from 'vuepress-theme-plume'
 import { zhCollections } from './collections'
 import { zhNavbar } from './navbar'
 import { zhSidebar } from './sidebar'
