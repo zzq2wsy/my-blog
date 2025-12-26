@@ -22,11 +22,6 @@ export default defineUserConfig({
       lang: 'zh-CN',
       description: 'This is my blog',
     },
-    '/en/': {
-      title: 'blwsyed-blog',
-      lang: 'en-US',
-      description: 'This is my blog',
-    },
   },
 
   head: [

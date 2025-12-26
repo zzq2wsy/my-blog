@@ -1,19 +1,4 @@
 export const zhSidebar = {
-  '/demo/': [
-    {
-      text: 'Demo',
-      children: [
-        {
-          text: 'bar',
-          link: '/demo/bar',
-        },
-        {
-          text: 'foo',
-          link: '/demo/foo',
-        }
-      ]
-    }
-  ],
   '/notes/linux/': [
     {
       text: 'Linux 学习笔记',

@@ -1,7 +1,7 @@
 ---
 title: Kubernetes 学习笔记
 createTime: 2025/12/03 16:59:00
-permalink: /kubernetes/
+permalink: /notes/kubernetes/
 ---
 
 # Kubernetes 学习笔记

@@ -104,7 +104,6 @@ const zhKubernetesDoc = defineCollection({
  */
 export const zhCollections = defineCollections([
   zhBlog,
-  zhDemoDoc,
   zhLinuxDoc,
   zhKubernetesDoc,
 ])

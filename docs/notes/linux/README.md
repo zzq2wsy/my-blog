@@ -1,7 +1,7 @@
 ---
 title: Linux 学习笔记
 createTime: 2025/12/03 16:59:00
-permalink: /linux/
+permalink: /notes/linux/
 ---
 
 # Linux 学习笔记
