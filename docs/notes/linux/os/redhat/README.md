@@ -1,7 +1,7 @@
 ---
 title: 红帽系 Linux
 createTime: 2025/01/01 10:00:00
-permalink: /notes/linux/os/redhat/
+permalink: /notes/linux/u3gdfqlb/
 ---
 
 # 红帽系 Linux

@@ -1,7 +1,7 @@
 ---
 title: Kubernetes 部署方式
 createTime: 2025/01/01 10:00:00
-permalink: /notes/kubernetes/deploy/
+permalink: /notes/kubernetes/ucj58km7/
 ---
 
 # Kubernetes 部署方式

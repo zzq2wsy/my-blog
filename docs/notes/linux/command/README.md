@@ -1,7 +1,7 @@
 ---
 title: Linux 基础常用命令
 createTime: 2025/01/01 10:00:00
-permalink: /notes/linux/command/
+permalink: /notes/linux/3lcv46lu/
 ---
 
 # Linux 基础常用命令

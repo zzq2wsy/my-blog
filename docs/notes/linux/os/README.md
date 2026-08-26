@@ -1,7 +1,7 @@
 ---
 title: Linux 操作系统
 createTime: 2025/01/01 10:00:00
-permalink: /notes/linux/os/
+permalink: /notes/linux/o6pfh214/
 ---
 
 # Linux 操作系统

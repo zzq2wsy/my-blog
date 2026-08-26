@@ -1,7 +1,7 @@
 ---
 title: kubeadm 部署
 createTime: 2025/01/01 10:00:00
-permalink: /notes/kubernetes/deploy/kubeadm/
+permalink: /notes/kubernetes/ft584z5q/
 ---
 
 # kubeadm 部署

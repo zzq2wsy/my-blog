@@ -1,7 +1,7 @@
 ---
 title: Kubernetes 常用命令速查
 createTime: 2025/01/01 10:00:00
-permalink: /notes/kubernetes/command/
+permalink: /notes/kubernetes/lzogh6g2/
 ---
 
 # Kubernetes 命令速查

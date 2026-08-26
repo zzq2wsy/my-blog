@@ -18,5 +18,5 @@ config:
         -
           theme: alt
           text: Notes
-          link: /demo/
+          link: /notes/
 ---

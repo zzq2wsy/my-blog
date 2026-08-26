@@ -13,6 +13,7 @@ export const zhNavbar: ThemeNavItem[] = defineNavbarConfig([
   { text: '归档', link: '/blog/archives/' },
   {
     text: '笔记',
+    link: '/notes/',
     items: [
       { text: 'Linux', link: '/notes/linux/' },
       { text: 'Kubernetes', link: '/notes/kubernetes/' },

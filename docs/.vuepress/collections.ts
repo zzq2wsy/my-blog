@@ -52,9 +52,9 @@ const zhLinuxDoc = defineCollection({
   // 文档集合所在目录，相对于 `docs/`
   dir: 'notes/linux',
   // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `linkPrefix` 配置作为前缀
-  // 如果 前缀不一致，则无法生成侧边栏。
-  // 所以请确保  markdown 文件的 permalink 都以 `/` + `linkPrefix` 开头
-  linkPrefix: '/notes/linux',
+  // 如果 前缀不一致，则无法生成侧边栏，也无法正确路由。
+  // 请确保 linkPrefix 与 markdown 文件中 permalink 的前缀完全一致（包含尾部斜杠）
+  linkPrefix: '/notes/linux/',
   // 文档标题，它将用于在页面的面包屑导航中显示
   title: 'Linux 学习笔记',
   // 根据文件结构自动生成侧边栏
@@ -67,9 +67,9 @@ const zhKubernetesDoc = defineCollection({
   // 文档集合所在目录，相对于 `docs/`
   dir: 'notes/kubernetes',
   // `dir` 所指向的目录中的所有 markdown 文件，其 permalink 需要以 `linkPrefix` 配置作为前缀
-  // 如果 前缀不一致，则无法生成侧边栏。
-  // 所以请确保  markdown 文件的 permalink 都以 `/` + `linkPrefix` 开头
-  linkPrefix: '/notes/kubernetes',
+  // 如果 前缀不一致，则无法生成侧边栏，也无法正确路由。
+  // 请确保 linkPrefix 与 markdown 文件中 permalink 的前缀完全一致（包含尾部斜杠）
+  linkPrefix: '/notes/kubernetes/',
   // 文档标题，它将用于在页面的面包屑导航中显示
   title: 'Kubernetes 学习笔记',
   // 根据文件结构自动生成侧边栏

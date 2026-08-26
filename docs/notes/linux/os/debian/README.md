@@ -1,7 +1,7 @@
 ---
 title: Debian系 Linux
 createTime: 2025/01/01 10:00:00
-permalink: /notes/linux/os/debian/
+permalink: /notes/linux/yie294g1/
 ---
 
 # Debian系 Linux

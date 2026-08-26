@@ -1,7 +1,7 @@
 ---
 title: K3s 部署
 createTime: 2025/8/02 12:00:00
-permalink: /notes/kubernetes/deploy/k3s/
+permalink: /notes/kubernetes/qatger3t/
 ---
 
 # K3s 部署
