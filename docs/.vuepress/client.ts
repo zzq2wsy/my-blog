@@ -1,5 +1,6 @@
 import { defineClientConfig } from 'vuepress/client'
 import HomeHeroProfile from './theme/components/HomeHeroProfile.vue'
+import { useBackgroundMusic } from './theme/composables/useBackgroundMusic'
 // import RepoCard from 'vuepress-theme-plume/features/RepoCard.vue'
 // import NpmBadge from 'vuepress-theme-plume/features/NpmBadge.vue'
 // import NpmBadgeGroup from 'vuepress-theme-plume/features/NpmBadgeGroup.vue'
@@ -10,6 +11,10 @@ import HomeHeroProfile from './theme/components/HomeHeroProfile.vue'
 import './theme/styles/custom.css'
 
 export default defineClientConfig({
+  setup() {
+    useBackgroundMusic()
+  },
+
   enhance({ app }) {
     app.component('home-hero-profile', HomeHeroProfile)
 
