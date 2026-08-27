@@ -1,4 +1,4 @@
-* text eol=lf
+* text=auto eol=lf
 *.txt text eol=crlf
 
 *.png binary
@@ -6,6 +6,11 @@
 *.jpeg binary
 *.ico binary
 *.gif binary
+*.mp3 binary
+*.m4a binary
+*.ogg binary
+*.mp4 binary
+*.webm binary
 *.tff binary
 *.woff binary
 *.woff2 binary

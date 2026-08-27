@@ -49,7 +49,7 @@ export function useBackgroundMusic(): void {
   }
 
   onMounted(() => {
-    audio = new Audio(withBase('/audio/project.mp3'))
+    audio = new Audio(withBase('/audio/project-v2.m4a'))
     audio.loop = true
     audio.preload = 'auto'
     audio.volume = backgroundMusicVolume
