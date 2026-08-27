@@ -29,6 +29,13 @@ jobs:
           # 选择要使用的 node 版本
           node-version: 22
 
+      - name: Cache pnpm store
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/share/pnpm/store
+          key: pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: |
+            pnpm-
 
       # 安装依赖
       # Install dependencies

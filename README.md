@@ -1,44 +1,30 @@
-# blwsyed-blog
+# Blwsyed Blog
 
-The Site is generated using [vuepress](https://vuepress.vuejs.org/) and [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume)
+访问地址：[https://blog.blwsyed.top/](https://blog.blwsyed.top/)
 
-## Install
+本站使用 [VuePress](https://vuepress.vuejs.org/) + [vuepress-theme-plume](https://github.com/pengzhanbo/vuepress-theme-plume) 构建，内容逐渐完善中...
 
-```sh
+## 环境要求
+
+- Node.js >= 20.6.0 或 >= 22.0.0
+- pnpm >= 10
+
+## 安装与运行
+
+```shell
+# 安装依赖
 pnpm i
-```
 
-## Usage
-
-```sh
-# start dev server
+# 本地开发
 pnpm docs:dev
-# build for production
+
+# 生产构建
 pnpm docs:build
-# preview production build in local
+
+# 本地预览构建产物
 pnpm docs:preview
-# update vuepress and theme
-pnpm vp-update
 ```
 
-## Deploy to GitHub Pages
+## 部署
 
-The plume theme has been created with GitHub Actions: `.github/workflows/docs-deploy.yml`. You also need to make the following settings in the GitHub repository:
-
-- [ ] `settings > Actions > General`, Scroll to the bottom of the page, under `Workflow permissions`, check `Read and write permissions`, and click the save button.
-
-- [ ] `settings > Pages`, In `Build and deployment`, select `Deploy from a branch` for `Source`, choose `gh-pages` for `Branch`, and click the save button.
-  (The `gh-pages` branch may not exist upon first creation. You can complete the above setup first, push the code to the main branch, wait for `github actions` to finish, and then proceed with the setup.)
-
-- [ ] Modify the `base` option in `docs/.vuepress/config.ts`:
-  - If you are planning to deploy to `https://<USERNAME>.github.io/`, you can skip this step as `base` defaults to `"/"`.
-  - If you are planning to deploy to `https://<USERNAME>.github.io/<REPO>/`, meaning your repository URL is `https://github.com/<USERNAME>/<REPO>`, set `base` to `"/<REPO>/"`.
-
-To customize a domain name, please refer to [Github Pages](https://docs.github.com/zh/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
-
-## Documents
-
-- [vuepress](https://vuepress.vuejs.org/)
-- [vuepress-theme-plume](https://theme-plume.vuejs.press/)
-# my-blog
-This is my blog
+本博客通过 GitHub Pages 部署，推送至 `main` 分支后会自动触发 `.github/workflows/deploy.yml` 工作流，构建并发布到 `gh-pages` 分支。
