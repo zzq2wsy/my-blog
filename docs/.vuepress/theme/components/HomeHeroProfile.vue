@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { ThemeHomeHero, ThemeHomeHeroLightning } from 'vuepress-theme-plume'
 import Lightning from '@theme/background/Lightning.vue'
+import { withBase } from 'vuepress/client'
 import { VPHomeHero } from 'vuepress-theme-plume/client'
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 
@@ -19,6 +20,9 @@ const props = defineProps<ThemeHomeHero & {
 }>()
 
 const now = ref<Date | null>(null)
+const animatedBackgroundSrc = withBase('/hero-bg.gif')
+const shouldLoadAnimatedBackground = ref(false)
+const animatedBackgroundReady = ref(false)
 const impactVisible = ref(false)
 const impactCycle = ref(0)
 const impactStyle = ref<Record<string, string>>({})
@@ -35,6 +39,7 @@ const impactFragments = [
   { x1: '11px', y1: '11px', xm: '34px', ym: '28px', x2: '52px', y2: '53px', size: '2px', color: '#7be7ff', rotate: '260deg', delay: '75ms' },
 ]
 let timer: ReturnType<typeof setInterval> | undefined
+let backgroundLoadTimer: ReturnType<typeof setTimeout> | undefined
 
 const date = computed(() => now.value?.toLocaleDateString('zh-CN', {
   year: 'numeric',
@@ -76,21 +81,46 @@ function hideImpact() {
   impactVisible.value = false
 }
 
+function scheduleAnimatedBackground() {
+  backgroundLoadTimer = setTimeout(() => {
+    shouldLoadAnimatedBackground.value = true
+  }, 1500)
+}
+
 onMounted(() => {
   now.value = new Date()
   timer = setInterval(() => {
     now.value = new Date()
   }, 1000)
+
+  if (document.readyState === 'complete')
+    scheduleAnimatedBackground()
+  else
+    window.addEventListener('load', scheduleAnimatedBackground, { once: true })
 })
 
 onUnmounted(() => {
   if (timer)
     clearInterval(timer)
+  if (backgroundLoadTimer)
+    clearTimeout(backgroundLoadTimer)
+  window.removeEventListener('load', scheduleAnimatedBackground)
 })
 </script>
 
 <template>
   <div class="home-hero-profile">
+    <img
+      v-if="shouldLoadAnimatedBackground"
+      class="hero-animated-background"
+      :class="{ 'is-ready': animatedBackgroundReady }"
+      :src="animatedBackgroundSrc"
+      alt=""
+      aria-hidden="true"
+      decoding="async"
+      fetchpriority="low"
+      @load="animatedBackgroundReady = true"
+    >
     <Lightning
       v-if="props.effect === 'lightning'"
       class="profile-lightning"
