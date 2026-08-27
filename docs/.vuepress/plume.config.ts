@@ -24,9 +24,17 @@ export default defineThemeConfig({
   appearance: true,  // 配置 深色模式
 
   social: [
-    { icon: 'github', link: '/' },
+    { icon: 'github', link: 'https://github.com/zzq2wsy' },
+    {
+      icon: {
+        name: 'email',
+        svg: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2m0 4-8 5-8-5V6l8 5 8-5z"/></svg>',
+      },
+      link: 'mailto:blwsyed@gmail.com',
+      ariaLabel: 'Email',
+    },
   ],
-  // navbarSocialInclude: ['github'], // 允许显示在导航栏的 social 社交链接
+  navbarSocialInclude: ['github', 'email'],
   // aside: true, // 页内侧边栏， 默认显示在右侧
   // outline: [2, 3], // 页内大纲， 默认显示 h2, h3
 
@@ -59,10 +67,10 @@ export default defineThemeConfig({
        * @see https://theme-plume.vuejs.press/config/basic/#profile
        */
       profile: {
-        avatar: 'https://theme-plume.vuejs.press/plume.png',
-        name: 'blwsyed-blog',
-        description: 'This is my blog',
-        // circle: true,
+        avatar: '/avatar.png',
+        name: 'blwsyed',
+        description: '运维工程师 / 技术爱好者',
+        circle: true,
         // location: '',
         // organization: '',
       },
